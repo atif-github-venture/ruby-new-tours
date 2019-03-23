@@ -1,0 +1,7 @@
+require 'rubygems'
+require 'cucumber'
+require 'cucumber/rake/task'
+
+Cucumber::Rake::Task.new(:new_tours_project) do |task|
+  task.cucumber_opts = '--color features --tags @new_tours --format html -o logs/report.html --format pretty'
+end
