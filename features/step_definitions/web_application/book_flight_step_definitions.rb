@@ -1,0 +1,15 @@
+Then(/^Book the flights on (.*) page$/) do |page_name|
+  @page.enter_text(page_name, 'first_pass_first_name', 'Rob')
+  @page.enter_text(page_name, 'first_pass_last_name', 'Martin')
+  @page.select_item(page_name, 'first_pass_meal', 'Bland')
+  @page.enter_text(page_name, 'second_pass_first_name', 'Bonnie')
+  @page.enter_text(page_name, 'second_pass_last_name', 'Doe')
+  @page.select_item(page_name, 'second_pass_meal', 'Kosher')
+  @page.select_item(page_name, 'card_type', 'Visa')
+  @page.enter_text(page_name, 'card_number', '1234567')
+  @page.select_item(page_name, 'expiration_year', '2010')
+  @page.enter_text(page_name, 'credit_hol_first_name', 'Rob')
+  @page.enter_text(page_name, 'credit_hol_mid_name', 'D')
+  @page.enter_text(page_name, 'credit_hol_last_name', 'Martin')
+  @page.click_button(page_name, 'secure_purchase_btn')
+end

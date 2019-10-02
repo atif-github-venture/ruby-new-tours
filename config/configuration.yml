@@ -1,0 +1,9 @@
+:demo_mercury_tours:
+  :url: http://www.newtours.demoaut.com/
+  :user_name: sams_dyno
+  :password: samsruby
+
+:dev_mercury_tours:
+  :url: http://www.newtours.dev-aut.com/
+  :user_name: test1
+  :password: password1
